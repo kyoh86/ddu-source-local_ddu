@@ -24,6 +24,7 @@
     "jsr:@shougo/ddu-vim@6.4": "6.4.0",
     "jsr:@shougo/ddu-vim@7.0": "7.0.0",
     "jsr:@shougo/ddu-vim@9.0": "9.0.0",
+    "jsr:@shougo/ddu-vim@9.1": "9.1.0",
     "jsr:@std/assert@~1.0.1": "1.0.6",
     "jsr:@std/async@1": "1.0.7",
     "jsr:@std/bytes@0.221": "0.221.0",
@@ -164,6 +165,12 @@
     },
     "@shougo/ddu-vim@9.0.0": {
       "integrity": "3e3803cdb25f2864a25d517fb2b64e44811788bda6e2a682a08d2910bdc7b0ca",
+      "dependencies": [
+        "jsr:@denops/std@7.4"
+      ]
+    },
+    "@shougo/ddu-vim@9.1.0": {
+      "integrity": "8a2b36a6490597c6208cc98a42a6e47135027ecad52b3e2b4d28669edcd390f9",
       "dependencies": [
         "jsr:@denops/std@7.4"
       ]
