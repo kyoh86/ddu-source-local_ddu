@@ -1,5 +1,5 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
     "jsr:@core/unknownutil@4": "4.3.0",
     "jsr:@core/unknownutil@^3.17.2": "3.18.1",
@@ -9,6 +9,8 @@
     "jsr:@denops/std@7.1": "7.1.1",
     "jsr:@denops/std@7.3": "7.3.0",
     "jsr:@denops/std@7.4": "7.4.0",
+    "jsr:@denops/std@7.5": "7.5.1",
+    "jsr:@denops/std@7.6": "7.6.0",
     "jsr:@denops/test@~3.0.2": "3.0.4",
     "jsr:@lambdalisue/errorutil@1": "1.1.1",
     "jsr:@lambdalisue/indexer@1": "1.0.0",
@@ -18,6 +20,7 @@
     "jsr:@lambdalisue/reservator@^1.0.1": "1.0.1",
     "jsr:@lambdalisue/streamtools@1": "1.0.1",
     "jsr:@lambdalisue/unreachable@^1.0.1": "1.0.1",
+    "jsr:@shougo/ddu-vim@10.3": "10.3.0",
     "jsr:@shougo/ddu-vim@6.0": "6.0.0",
     "jsr:@shougo/ddu-vim@6.1": "6.1.0",
     "jsr:@shougo/ddu-vim@6.2": "6.2.0",
@@ -79,6 +82,18 @@
     },
     "@denops/std@7.4.0": {
       "integrity": "6d7ae66af0286a440c14c0ba096b4336697bcd69e83e0fce21a41fb3dec10d65",
+      "dependencies": [
+        "jsr:@denops/core"
+      ]
+    },
+    "@denops/std@7.5.1": {
+      "integrity": "ddf3ed8ba0da876584dfa6aa893e88d735db507483788cdb002d7164a8943c3c",
+      "dependencies": [
+        "jsr:@denops/core"
+      ]
+    },
+    "@denops/std@7.6.0": {
+      "integrity": "468a5b4121378a845bbc4cd705fe0075dff9cd0af41fbb8a797870535af5c4c8",
       "dependencies": [
         "jsr:@denops/core"
       ]
@@ -203,6 +218,12 @@
         "jsr:@denops/std@7.4"
       ]
     },
+    "@shougo/ddu-vim@10.3.0": {
+      "integrity": "5be1239504b154373d02f3734b2c24d3266107fee781a55fde46fcc84a9a6057",
+      "dependencies": [
+        "jsr:@denops/std@7.5"
+      ]
+    },
     "@std/assert@1.0.3": {
       "integrity": "b0d03ce1ced880df67132eea140623010d415848df66f6aa5df76507ca7c26d8",
       "dependencies": [
@@ -269,22 +290,34 @@
   },
   "npm": {
     "@msgpackr-extract/msgpackr-extract-darwin-arm64@3.0.3": {
-      "integrity": "sha512-QZHtlVgbAdy2zAqNA9Gu1UpIuI8Xvsd1v8ic6B2pZmeFnFcMWiPLfWXh7TVw4eGEZ/C9TH281KwhVoeQUKbyjw=="
+      "integrity": "sha512-QZHtlVgbAdy2zAqNA9Gu1UpIuI8Xvsd1v8ic6B2pZmeFnFcMWiPLfWXh7TVw4eGEZ/C9TH281KwhVoeQUKbyjw==",
+      "os": ["darwin"],
+      "cpu": ["arm64"]
     },
     "@msgpackr-extract/msgpackr-extract-darwin-x64@3.0.3": {
-      "integrity": "sha512-mdzd3AVzYKuUmiWOQ8GNhl64/IoFGol569zNRdkLReh6LRLHOXxU4U8eq0JwaD8iFHdVGqSy4IjFL4reoWCDFw=="
+      "integrity": "sha512-mdzd3AVzYKuUmiWOQ8GNhl64/IoFGol569zNRdkLReh6LRLHOXxU4U8eq0JwaD8iFHdVGqSy4IjFL4reoWCDFw==",
+      "os": ["darwin"],
+      "cpu": ["x64"]
     },
     "@msgpackr-extract/msgpackr-extract-linux-arm64@3.0.3": {
-      "integrity": "sha512-YxQL+ax0XqBJDZiKimS2XQaf+2wDGVa1enVRGzEvLLVFeqa5kx2bWbtcSXgsxjQB7nRqqIGFIcLteF/sHeVtQg=="
+      "integrity": "sha512-YxQL+ax0XqBJDZiKimS2XQaf+2wDGVa1enVRGzEvLLVFeqa5kx2bWbtcSXgsxjQB7nRqqIGFIcLteF/sHeVtQg==",
+      "os": ["linux"],
+      "cpu": ["arm64"]
     },
     "@msgpackr-extract/msgpackr-extract-linux-arm@3.0.3": {
-      "integrity": "sha512-fg0uy/dG/nZEXfYilKoRe7yALaNmHoYeIoJuJ7KJ+YyU2bvY8vPv27f7UKhGRpY6euFYqEVhxCFZgAUNQBM3nw=="
+      "integrity": "sha512-fg0uy/dG/nZEXfYilKoRe7yALaNmHoYeIoJuJ7KJ+YyU2bvY8vPv27f7UKhGRpY6euFYqEVhxCFZgAUNQBM3nw==",
+      "os": ["linux"],
+      "cpu": ["arm"]
     },
     "@msgpackr-extract/msgpackr-extract-linux-x64@3.0.3": {
-      "integrity": "sha512-cvwNfbP07pKUfq1uH+S6KJ7dT9K8WOE4ZiAcsrSes+UY55E/0jLYc+vq+DO7jlmqRb5zAggExKm0H7O/CBaesg=="
+      "integrity": "sha512-cvwNfbP07pKUfq1uH+S6KJ7dT9K8WOE4ZiAcsrSes+UY55E/0jLYc+vq+DO7jlmqRb5zAggExKm0H7O/CBaesg==",
+      "os": ["linux"],
+      "cpu": ["x64"]
     },
     "@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3": {
-      "integrity": "sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ=="
+      "integrity": "sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==",
+      "os": ["win32"],
+      "cpu": ["x64"]
     },
     "detect-libc@2.0.3": {
       "integrity": "sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw=="
@@ -292,18 +325,22 @@
     "msgpackr-extract@3.0.3": {
       "integrity": "sha512-P0efT1C9jIdVRefqjzOQ9Xml57zpOXnIuS+csaB4MdZbTdmGDLo8XhzBG1N7aO11gKDDkJvBLULeFTo46wwreA==",
       "dependencies": [
+        "node-gyp-build-optional-packages"
+      ],
+      "optionalDependencies": [
         "@msgpackr-extract/msgpackr-extract-darwin-arm64",
         "@msgpackr-extract/msgpackr-extract-darwin-x64",
         "@msgpackr-extract/msgpackr-extract-linux-arm",
         "@msgpackr-extract/msgpackr-extract-linux-arm64",
         "@msgpackr-extract/msgpackr-extract-linux-x64",
-        "@msgpackr-extract/msgpackr-extract-win32-x64",
-        "node-gyp-build-optional-packages"
-      ]
+        "@msgpackr-extract/msgpackr-extract-win32-x64"
+      ],
+      "scripts": true,
+      "bin": true
     },
     "msgpackr@1.11.0": {
       "integrity": "sha512-I8qXuuALqJe5laEBYoFykChhSXLikZmUhccjGsPuSJ/7uPip2TJ7lwdIQwWSAi0jGZDXv4WOP8Qg65QZRuXxXw==",
-      "dependencies": [
+      "optionalDependencies": [
         "msgpackr-extract"
       ]
     },
@@ -311,7 +348,8 @@
       "integrity": "sha512-s+w+rBWnpTMwSFbaE0UXsRlg7hU4FjekKU4eyAih5T8nJuNZT1nNsskXpxmeqSK9UzkBl6UgRlnKc8hz8IEqOw==",
       "dependencies": [
         "detect-libc"
-      ]
+      ],
+      "bin": true
     }
   }
 }
