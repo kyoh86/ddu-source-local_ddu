@@ -1,12 +1,12 @@
-import type { GatherArguments } from "jsr:@shougo/ddu-vim@~10.3.0/source";
+import type { GatherArguments } from "@shougo/ddu-vim/source";
 import {
   ActionFlags,
   type Actions,
   type DduItem,
   type Item,
-} from "jsr:@shougo/ddu-vim@~10.3.0/types";
-import { BaseSource } from "jsr:@shougo/ddu-vim@~10.3.0/source";
-import type { Denops } from "jsr:@denops/std@~7.6.0";
+} from "@shougo/ddu-vim/types";
+import { BaseSource } from "@shougo/ddu-vim/source";
+import type { Denops } from "@denops/std";
 
 type ActionData = { name: string };
 
